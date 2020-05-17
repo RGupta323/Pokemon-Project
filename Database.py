@@ -2,6 +2,7 @@
 from databases import Database;
 import mysql.connector;
 import psycopg2;
+from Entry import *
 """
 So for this project we're going to be using PostgreSQL as a database; its a great back end database and its good to get
 some experience with that.
@@ -43,12 +44,6 @@ def connect():
     #print("connection successful")
     return cursor;
 
-
-#add data to the database to a specific table t
-def add(data,table_name):
-    if(table_name not in tables):
-        return None;
-
 #function that takes in a list of table names and creates those tables within the
 #database
 def check_tables():
@@ -80,10 +75,7 @@ def create_table(table_name, d):
         key=list(d.keys())[i]
         #determien b
         b=str()
-        if(type(d[key])==int):
-            b="int";
-        elif(type(d[key])==str):
-                b="varchar(255)"
+        b="varchar(255)"
         #create a
         if(i==len(list(d.keys()))-1):
             a+=str(key)+" "+str(b)+"\n";
@@ -91,17 +83,78 @@ def create_table(table_name, d):
             a+=str(key)+" "+str(b)+",\n"
     #print(a);
     cursor.execute("""CREATE TABLE """+str(table_name)+"""( """+a+""");""")
+    tables.append(table_name); #add table_name to tables;
     #cursor.commit();
     #print(cursor.fetchall());
     cursor.close();
-    conn.commit(); 
+    conn.commit();
     conn.close();
 
 
-#delete an entry from the database from a specific table t
-def add(entry, table_name):
-    pass;
+#add an entry from the database from a specific table t
+#in this case, d represents a dictionary which stores an entry to be put into a table t
+#first key, named "table-name" will have a string indicating the table name,
+#the rest of the keys are the attributes of the table;
+def add(d):
+    #create connection objects and cursor object
+    conn=connect();
+    cursor=conn.cursor();
+
+    #formulate the command
+    keys,values=[k for k in d.keys() if(k!="table-name")],[d[k] for k in d.keys() if(k!="table-name")]
+    command="""INSERT INTO {} ({}) VALUES ({});""".format(d["table-name"],add_helper(values),
+                                                         add_helper(keys));
+    print("line 109: "+command);
+
+    #try-expect block to test command (cursor.execute())
+    try:
+        cursor.execute(command);
+    except Exception as e:
+        print("line 115")
+        print(e);
+        return False;
+
+    #execute command
+    cursor.close()
+    conn.commit();
+
+    conn.close();
+    return True;
+
+#helper function that converts a dictionary keys/values into a string separated by commas
+#It takes in a list essentially, adn converts its contents all into strings, each element separated
+#by commas.
+def add_helper(a):
+    return (",".join([str(element) for element in a ]))
+
+
+#delete an entry from table t
+def delete(d):
+    pass
 
 #search entries from the database database and returns a location? of the entry
+def search(d):
+    pass;
 
 #update takes in an entry and updates it with a new entry
+def update(d):
+    pass;
+
+def delete_table(table_name):
+    #create conn and cursor objects
+    conn=connect();
+    cursor=conn.cursor()
+
+    #execute drop table command: "DROP TABLE table_name"
+    try:
+        cursor.execute("DROP TABLE "+str(table_name));
+    except Exception as e:
+        print("line 152");
+        print(e);
+        return False;
+
+    #commit command and close objects
+    conn.commit();
+
+    cursor.close()
+    conn.close()
