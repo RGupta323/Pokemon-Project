@@ -14,9 +14,11 @@ cursor.close()
 conn.close(); """
 
 def addTest():
-   d={"table-name":"Pokemon","name":"a", "types":"a", "abilities":"a", "height":1,
-      "weight":1, "gender":"a", "evolution":"a"}
+   d={"table-name":"Pokemon","id":'1',"name":'a', "types":'a', "abilities":'a', "height":'1',
+      "weight":'1', "gender":'a', "evolution":'a'}
     #self.assertEqual(True, add(e, "Pokemon"))
+   #delete_table("Pokemon")
+   #create_table("POKEMON",["id","name","types","abilities","height","weight","gender","evolution"])
    add(d);
 
 

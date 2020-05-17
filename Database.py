@@ -61,29 +61,26 @@ def check_tables():
 #basic function of databases
 
 #create table
-#Where d is a dictionary, its keys are the attributes or columsn of the table,
-#and the values are the types of each column
-#example: {id:1, name:varchar(255)}
-#strings are varchar(255), ints are int,
+#Where d is a list, which are the attributes or the columns of the table
+#they're all type strings, so it creates a table
 def create_table(table_name, d):
     conn=connect();
-    if(conn==None):
-        return None;
-    cursor=conn.cursor();
-    a=str();
-    for i in range(len(list(d.keys()))):
-        key=list(d.keys())[i]
-        #determien b
-        b=str()
-        b="varchar(255)"
-        #create a
-        if(i==len(list(d.keys()))-1):
-            a+=str(key)+" "+str(b)+"\n";
-        else:
-            a+=str(key)+" "+str(b)+",\n"
+    cursor=conn.cursor()
+    try:
+        a=" varchar(255), ".join([str(k) for k in d])
+        a+=" varchar(255)"
+    except Exception as e:
+        print("line 72");
+        print(e);
+        return False;
     #print(a);
-    cursor.execute("""CREATE TABLE """+str(table_name)+"""( """+a+""");""")
-    tables.append(table_name); #add table_name to tables;
+    try:
+        cursor.execute("""CREATE TABLE """+str(table_name)+"""( """+a+""");""")
+        tables.append(table_name); #add table_name to tables;
+    except Exception as e:
+        print("line 75")
+        print(e);
+        return False;
     #cursor.commit();
     #print(cursor.fetchall());
     cursor.close();
@@ -96,14 +93,21 @@ def create_table(table_name, d):
 #first key, named "table-name" will have a string indicating the table name,
 #the rest of the keys are the attributes of the table;
 def add(d):
+    if(d["table-name"].lower()=="pokemon"):
+        add_pokemon(d)
+    #other if statements here for other tables...
+def add_pokemon(d):
     #create connection objects and cursor object
     conn=connect();
     cursor=conn.cursor();
 
     #formulate the command
     keys,values=[k for k in d.keys() if(k!="table-name")],[d[k] for k in d.keys() if(k!="table-name")]
-    command="""INSERT INTO {} ({}) VALUES ({});""".format(d["table-name"],add_helper(values),
-                                                         add_helper(keys));
+    #command="""INSERT INTO {} ({}) VALUES ({});""".format(d["table-name"],add_helper(keys),
+                                                         #add_helper(values));
+    #print(len(values))
+    print(values)
+    command="INSERT INTO POKEMON VALUES(%s,%s,%s,%s,%s,%s,%s,%s)" % tuple(values)
     print("line 109: "+command);
 
     #try-expect block to test command (cursor.execute())
@@ -125,7 +129,7 @@ def add(d):
 #It takes in a list essentially, adn converts its contents all into strings, each element separated
 #by commas.
 def add_helper(a):
-    return (",".join([str(element) for element in a ]))
+    return (','.join([element for element in a ]))
 
 
 #delete an entry from table t
