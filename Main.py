@@ -1,4 +1,5 @@
 from Database import *
+from CSV import *
 """d=dict();
 d={"id":1, "name":"a","types":"a","abilities":"a","height":1, "weight": 1,
    "gender":"a","evolution":"a"}
@@ -21,6 +22,9 @@ def addTest():
    #create_table("POKEMON",["id","name","types","abilities","height","weight","gender","evolution"])
    add(d);
 
+def csvTest():
+    #createCSV("Pokemon",["id","name","types","abilities","height","weight","gender","evolution"])
+    pass;
 
 if(__name__ == '__main__'):
-    addTest();
+    csvTest();
