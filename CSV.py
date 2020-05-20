@@ -38,15 +38,15 @@ Output:
  '''
 def write(fileName, attrs):
     try:
-        with open(fileName,"w") as file:
-            print("line 42, entered");
+        with open(fileName,"a") as file:
+            #print("line 42, entered");
             fw=csv.writer(file,delimiter=",", quotechar="|", quoting=csv.QUOTE_MINIMAL);
             #its 1 to skip the first row;
             for i in range(0,len(attrs)):
-                print("line 46, entered loop")
+                #print("line 46, entered loop")
                 d=attrs[i];
-                print(d);
-                print(d.values())
+                #print(d);
+                #print(d.values())
                 fw.writerow(d.values());
             file.close()
     except Exception as e:
