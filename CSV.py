@@ -39,12 +39,18 @@ Output:
 def write(fileName, attrs):
     try:
         with open(fileName,"w") as file:
+            print("line 42, entered");
             fw=csv.writer(file,delimiter=",", quotechar="|", quoting=csv.QUOTE_MINIMAL);
             #its 1 to skip the first row;
-            for i in range(1,len(attrs)):
+            for i in range(0,len(attrs)):
+                print("line 46, entered loop")
                 d=attrs[i];
+                print(d);
+                print(d.values())
                 fw.writerow(d.values());
+            file.close()
     except Exception as e:
+        print("entered");
         print("line 46");
         print(e);
         return False
@@ -79,19 +85,21 @@ Outputs:
 def read(fileName, i=-1):
     try:
         lis=list()
-        with open(fileName,'r') as f:
-            reader=csv.reader(f);
-            first=True;
-            for row in reader:
-                if(i==0):
-                    #assemble dict
-                    return read_helper(fileName, row)
-                if(first):
-                    first=False;
-                    continue;
-                #ASSEMBLE DICTIONARY
-                list.append(read_helper(fileName, row))
-            return lis
+        f=open(fileName,"r")
+        reader=csv.reader(f);
+        first=True;
+        #print(len([row for row in reader]))
+        for row in reader:
+            if(i==0):
+                #assemble dict
+                return read_helper(fileName, row)
+            if(first):
+                first=False;
+                continue;
+            #ASSEMBLE DICTIONARY
+            lis.append(read_helper(fileName, row))
+        f.close()
+        return lis
     except Exception as e:
         print("line 96");
         print(e)
@@ -113,16 +121,41 @@ Why?
 '''
 def read_helper(fileName,a):
     d=dict()
-    try:
-        keys=read(fileName,0);
-        for i in range(len(a)):
+    keys=getRow(fileName,0);
+    #print(keys)
+    for i in range(len(a)):
+        try:
             k,v=keys[i],a[i]
             d[k]=v;
-    except Exception as e:
-        print("line 122")
-        print(e)
-        return False
-    return d; 
+        except Exception as e:
+            print("line 130")
+            print(k);
+            print(v);
+            print(e)
 
+
+    return d;
+#another helper function designed to get the ith row of a csv
+def getRow(fileName,i):
+    f=open(fileName,"r");
+    reader=csv.reader(f);
+    j=0;
+    a=None;
+    for row in reader:
+        if(j==i):
+            a=row;
+            break;
+        else:
+            j+=1
+    f.close()
+    return a;
+def printCSV(fileName):
+    #print(type(fileName))
+    f=open(fileName,"r")
+    #print(f)
+    reader=csv.reader(f);
+    for row in reader:
+        print(row);
+    f.close();
 
 
