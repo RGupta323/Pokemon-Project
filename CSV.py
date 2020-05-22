@@ -38,7 +38,7 @@ Output:
  '''
 def write(fileName, attrs):
     try:
-        with open(fileName,"a") as file:
+        with open(fileName,"a",newline="") as file:
             #print("line 42, entered");
             fw=csv.writer(file,delimiter=",", quotechar="|", quoting=csv.QUOTE_MINIMAL);
             #its 1 to skip the first row;
@@ -158,4 +158,57 @@ def printCSV(fileName):
         print(row);
     f.close();
 
+
+
+#checkCSV() function, checks the given csv file and corrects any new line enteries...
+'''
+    Function to check the csv function, and check if there are any new line entries and correct them... 
+    
+    Inputs: 
+        fileName is a string that indicates a csv file to open 
+        
+    Logic: 
+        Open the csv file
+        Loop through the rows and return true if there are new line characters and correct them, OR
+        if there are no new line characters (these new line characters come in the form of empty lists)
+        return false if any errors. 
+        Now once you know there are any empty lists, what you need to do is delete them, 
+        you either have to re-write teh file and all of its data... 
+'''
+def checkCSV(fileName):
+    f=open(fileName,"r");
+    #create csv writer
+    reader=csv.reader(f);
+    #now loop through it...
+    emptyLines=False;
+    try:
+        for row in reader:
+            if(row==[]):
+                #print(row);
+                emptyLines= True;
+                #now call a helper function to correct these rows.
+                correctCSV(fileName);
+    except Exception as e:
+        print("line 192")
+        print(e);
+        return False;
+    f.close()
+    return emptyLines;
+
+#helper function to re-write csv file to make sure tehre are no empty lines.
+def correctCSV(fileName):
+    #open the file, for reading.
+    f=open(fileName,"r");
+    #assemble a writer
+    reader=csv.reader(f);
+    #now get all the rows that aren't empty lists; this will be a list of lists.
+    rows=[row for row in reader if(row!=[])]
+    f.close()
+    #now open the file for writing...
+    f=open(fileName,"w",newline="")
+    writer=csv.writer(f);
+    #now write that entire csv file, adn write all the non-empty rows.
+    for row in rows:
+        writer.writerow(row);
+    f.close()
 

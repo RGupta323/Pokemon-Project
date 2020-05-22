@@ -26,11 +26,12 @@ def csvTest():
     #createCSV("Pokemon",["id","name","types","abilities","height","weight","gender","evolution"])
     d = {"id": '1', "name": 'a', "types": 'a', "abilities": 'a', "height": '1',
          "weight": '1', "gender": 'a', "evolution": 'a'}
-    print(write("C:/Users/gupta/PycharmProjects/Pokemon.csv",[d]))
+    #print(write("Pokemon.csv",[d]))
     #createCSV("Pokemon",d.values())
     #printCSV("Pokemon.csv")
     #print(read("Pokemon.csv"));
-    printCSV("Pokemon.csv")
+    #printCSV("Pokemon.csv")
+    print(checkCSV("Pokemon.csv"))
 
 if(__name__ == '__main__'):
     csvTest();
