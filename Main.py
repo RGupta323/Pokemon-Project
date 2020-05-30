@@ -1,5 +1,6 @@
 from Database import *
 from CSV import *
+from WebScrape import *
 """d=dict();
 d={"id":1, "name":"a","types":"a","abilities":"a","height":1, "weight": 1,
    "gender":"a","evolution":"a"}
@@ -33,5 +34,9 @@ def csvTest():
     #printCSV("Pokemon.csv")
     print(checkCSV("Pokemon.csv"))
 
+def WebScraperTest():
+    url="https://pokemondb.net/pokedex/national#gen-1"
+    print(parse(url,id="gen-1"))
+
 if(__name__ == '__main__'):
-    csvTest();
+    WebScraperTest();
