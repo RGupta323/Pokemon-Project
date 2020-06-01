@@ -49,6 +49,9 @@ def parse(url, d, spyder=False):
     #if spyder is true then you're looking for a tags in whatever configuration that you die.
     if(spyder):
         return spyder(url,d);
+    #take care of nesting case...
+    if(isNested(d)):
+        return nesting(url,d);
     else:
         #proceed normally
         return parse_normal(url,d);
@@ -126,11 +129,17 @@ def gethtml(url,d):
 
 
 #function spyder(), to return a list of urls
-def spyder(url,d,nested=False):
-
+def spyder(url,d):
+    nested=isNested(d);
+    if(nested):
+        #So this is a tricky case here, spyder() needs to scrape a tags, and if it is nested
+        #then you need to take care of the nesting tags as well...
+        return nesting(url,d,spyder=True);
+    html=gethtml(url,d);
+    pass;
 
 #function to deal with nesting tags...
-def nesting(url,d):
+def nesting(url,d,spyder=False):
     pass;
 
 #helper function to see if nesting is true or false, it will depend on the configuration of the dictionary
@@ -143,3 +152,33 @@ def isNested(d):
         return e;
     return isNested;
 
+#Another helper function to essentially spider-ify a dictionary
+#when the spyder() function is called, and the input dict d is nested then you have to make sure
+#that the last tag is an a tag...
+def spyder_dict(d):
+    #first search the input dictionary and see if there is an a tag as the last value of the tag key...
+    #if there is return the dictioanry, if there isn't add it.
+    if(getTag(d,key='tag',i=depth(d,key='tag'))=='a'):
+        return d;
+
+
+
+#helper recursive functiosn here...
+
+#depth() function, given a key and a dictionary to see how nested a dictionary is given a key.
+def depth(d,key):
+    if(type(d[key])!=dict):
+        return 0
+    d=d[key]
+    k=list(d[key].keys())[0]
+    return 1+depth(d,k)
+
+#getTag() helper function,
+#given a dictionary d, a key in d.keys(), and an integer i
+#where i specifies inside the nested dictionary, waht ith value they want
+def getTag(d,key,i):
+    if(i==0):
+        return d[key]
+    d=d[key]
+    k=list(d.keys())[0]
+    return getTag(d,k,i-1)
