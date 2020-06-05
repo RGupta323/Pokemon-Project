@@ -129,6 +129,11 @@ def gethtml(url,d):
 
 
 #function spyder(), to return a list of urls
+'''
+This function is going to, ideally, return the urls in the a tags that are in the href attribute. 
+If something is nested, that gets trickier, first 'spyderify' the dictionary to make sure the last tag are a tags. 
+So if it is nested, then you need to 'un-nest' these tags, show us what we're doing and then 
+'''
 def spyder(url,d):
     nested=isNested(d);
     if(nested):
@@ -139,13 +144,45 @@ def spyder(url,d):
     pass;
 
 #function to deal with nesting tags...
+'''
+So this is dealing with the case that the tags are nested. It deals with that case using beautiful soup. 
+So if your input dictionary looks something like this: 
+d={'tag':{'div':{'span':'a'}}, 'class':{'div':'infocard'}, id=None} 
+This tells us that you're looking for an a tag inside a span tag inside a div tag. 
+Now the class tag tells us that all divs must have the class 'infocard'. 
+Our final destination is to get those a tags. 
+
+Kind of a preliminary case, you want to check if the spyder which is a boolean value if it is true or not. 
+If you're going to spyder basically that means you wanna 'spyderify' the input dictionary d so to speak so call 
+d=spyyder_dict(d), and then call the spyder() function. 
+
+Inputs: 
+    url is a string that specifies the url 
+    d is a input dictionary, properly formatted. 
+    spyder, an optinoal boolean variable, that tells you if it needs to be spydered so to speak. 
+    
+Logic: 
+    So if spyder is true: 
+        d=spyder_dict(d); 
+        Which means you're going to be looking for a tags at the end 
+        Then you wanna scrape all the a tags, whatever they're nested inside. 
+        Call spyder()
+    Else, 
+        So start with the outter most tag, and get all teh content out of that with getHTML(), 
+        then use bs within that object scrape all the tags within, so its going to be more of a infinite loop... 
+
+Output
+    Raise an error and return None, if there are any errors. 
+    If not, return an iterable bs object ie namelist=bs.findAll('span'), return namelist; 
+'''
 def nesting(url,d,spyder=False):
-    pass;
+    if(spyder):
+        pass;
 
 #helper function to see if nesting is true or false, it will depend on the configuration of the dictionary
 def isNested(d):
     try:
-        isNested=type(d['tag'])==dict
+        isNested=(type(d['tag'])==dict)
     except Exception as e:
         print("line 91, isNested() function. ")
         raise CustomError("Error accessing value of 'tag' key in, input dictionary")
@@ -160,6 +197,11 @@ def spyder_dict(d):
     #if there is return the dictioanry, if there isn't add it.
     if(getTag(d,key='tag',i=depth(d,key='tag'))=='a'):
         return d;
+    temp=get_i_dict(d,key='tag',i=depth(d,key='tag'));
+    k,v=list(temp.keys())[0],list(temp.values())[0]
+    temp[k]={v:'a'}
+    d['tag']=temp;
+    return d;
 
 
 
@@ -182,3 +224,10 @@ def getTag(d,key,i):
     d=d[key]
     k=list(d.keys())[0]
     return getTag(d,k,i-1)
+#helper function to get an ith dictionary of a nested dict
+def get_i_dict(d,key,i):
+    if(i==0):
+        return d;
+    d=d[key]
+    k=list(d.keys())[0]
+    return get_i_dict(d,key,i-1)
