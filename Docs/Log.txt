@@ -1,0 +1,30 @@
+So this is more of a day by day account of what I did, what errors, I encountered
+how I solved them. If I'm changing direction of the project (which I did quite often).
+
+6/6/2020
+So today, I added JSON.py which is a python file to read, write, print, and append
+to a JSON file. I decided to work on this because while using ParseHub there were
+just way too many issues with a CSV file, but with a JSON each entry per say can
+contain multiple values, and can list the data much more effectively.
+
+Although another issue I encountered is that data can be missing for some entries like
+for example, Venasaur is missing some stats information. So I outlined several projects
+that I wanted to do in ParseHub.txt so I'll initiate thouse but most likely they will be
+using JSON files.
+
+Ran into some problems with JUnit, don't think its running my
+test function that I created. It only runs the first one, so
+I called the second test function in the first one, and its not
+doing anything. I don't know if its always returning true
+because my function was called and it returned true.
+
+6/7/2020
+Looked into the JUnit testing issues we encountered them and we
+fixed it. So all functions within the junit class they must have
+test_functionanme(self) this signature, so "test_" must be
+declared. Otherwise this function (located
+ in JSONTest.py) won't run them.
+
+And yes my function works. Weirdly though it doesn't print
+anything even when the print() function is called. Its just
+blank. Now which tells me that the variable r is blank.

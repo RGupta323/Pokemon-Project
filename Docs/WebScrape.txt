@@ -1,0 +1,18 @@
+This file is to serve as documentation for the python file WebScrape.py.
+
+At first, the file was to use urllib and beautiful soup to scrape the websites itself, which would depend on a input
+dictionary or an object. But now this python file is going to be used to ideally automate parsehub which is an api that
+allows us to scrape websites more easily.
+
+The point of this file is to have a couple of basic functions that can be able to scrape needed data from any given url.
+
+In order to use this project, first you must go to ParseHub and download it (https://www.parsehub.com/quickstart), then
+you must start a project and then enter the url that you wish to scrape. It'll take you to this user interface (GUI) and
+with that you can use a combination of selectors, relative selectors and commands, to scrape the data that you want.
+
+Refer to this github repo (https://github.com/hronecviktor/py-parsehub), these provide simple functions to find a project
+and get a project via python. But the directions above to use ParseHub must be done first.
+
+Refer to these API docs (https://www.parsehub.com/docs/ref/api/v2/)
+
+Usage:

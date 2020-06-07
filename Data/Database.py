@@ -1,8 +1,6 @@
 #Python file for all database functions
-from databases import Database;
-import mysql.connector;
 import psycopg2;
-from Entry import *
+
 """
 So for this project we're going to be using PostgreSQL as a database; its a great back end database and its good to get
 some experience with that.

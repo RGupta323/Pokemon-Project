@@ -2,13 +2,12 @@ import sys;
 
 from Data.Database import *
 from Data.CSV import *;
+from Data.WebScrape import *;
 
 sys.path.insert(1, "C:\\Users\\gupta\\PycharmProjects\\PokemonProject\\Data\\CSV.py")
 sys.path.insert(1,'C:\\Users\\gupta\\PycharmProjects\\PokemonProject\\Data\\Database.py')
 
-from Data import Database
-from Data import CSV
-from WebScrape import *
+from Data.WebScrape import *
 """d=dict();
 d={"id":1, "name":"a","types":"a","abilities":"a","height":1, "weight": 1,
    "gender":"a","evolution":"a"}
