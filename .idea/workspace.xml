@@ -3,12 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="69cd0f90-9469-43cd-8d8f-a117ba5391e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/Entry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/Errors/Errors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/JSON.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/JSON.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/WebScrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/WebScrape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/Log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/Log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebScrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/WebScrape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Pokemon.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/JSONTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/JSONTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +44,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\Files" />
       <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\Errors" />
       <recent name="C:\Users\gupta\PycharmProjects\PokemonProject" />
       <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\Data\Objects" />
       <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\Data" />
-      <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\Tests" />
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Unittests for JSONTest.MyTestCase.test_readTest">
@@ -174,22 +175,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="285" y="123" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589901891459" />
-    <state width="886" height="207" key="GridCell.Tab.0.bottom" timestamp="1591546375174">
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom" timestamp="1591897573297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="886" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591546375174" />
-    <state width="886" height="207" key="GridCell.Tab.0.center" timestamp="1591546375173">
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591897573297" />
+    <state width="1515" height="228" key="GridCell.Tab.0.center" timestamp="1591897573297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="886" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591546375173" />
-    <state width="886" height="207" key="GridCell.Tab.0.left" timestamp="1591546375173">
+    <state width="1515" height="228" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591897573297" />
+    <state width="1515" height="228" key="GridCell.Tab.0.left" timestamp="1591897573297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="886" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591546375173" />
-    <state width="886" height="207" key="GridCell.Tab.0.right" timestamp="1591546375174">
+    <state width="1515" height="228" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591897573297" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right" timestamp="1591897573297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="886" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591546375174" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591897573297" />
     <state width="886" height="382" key="GridCell.Tab.1.bottom" timestamp="1591465862878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -210,10 +211,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591122968030" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591416567864">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591900043683">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591416567864" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591900043683" />
     <state x="491" y="324" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1591453957617">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

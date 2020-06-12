@@ -25,6 +25,22 @@ test_functionanme(self) this signature, so "test_" must be
 declared. Otherwise this function (located
  in JSONTest.py) won't run them.
 
-And yes my function works. Weirdly though it doesn't print
+And yes my function works. ISSUE: Weirdly though it doesn't print
 anything even when the print() function is called. Its just
 blank. Now which tells me that the variable r is blank.
+
+I tried to fix it but in vain.
+Might have to script it.
+
+
+6/9/2020
+SOLUTION: So the print statement does work, but I had a function in JSON.py called print() and it was referring
+to that function every time I called print. So the print() function that I had created has been renamed and so the
+print statement now works normally along with the junit tests. Note: print should appear in a blue-purple color when
+written.
+
+6/10/2020
+I figured out how Pokemon damage is calculated, I figured that'd be a huge roadblock down the road but there's a
+formula, found here: https://bulbapedia.bulbagarden.net/wiki/Damage
+The other thing is that I'm reformatting functions so it'll return False and raise an error if an exception occurs
+but if not, then it'll return whatever it needs to return. An example of this is the read() function in JSON.py

@@ -4,7 +4,7 @@ and scrape data from it, then format it so it can be used as an input to the csv
 '''
 import requests
 from bs4 import BeautifulSoup as bs
-from Errors import *
+from Errors.Errors import *
 from urllib.request import Request, urlopen
 
 '''

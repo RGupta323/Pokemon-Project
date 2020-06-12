@@ -1,5 +1,6 @@
 import unittest
 from Data.Database import *
+from Objects.Entry import Pokemon_Entry
 
 
 class MyTestCase(unittest.TestCase):
