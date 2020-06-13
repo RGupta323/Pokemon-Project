@@ -1,17 +1,40 @@
-import unittest
-from Data.Database import *
-from Objects.Entry import Pokemon_Entry
+'''
+This is going to be a file that is going to contain helper functions for my junit tests.
+'''
+#function to generate a random dictionary of strings
+from random import random
+from Errors.Errors import *;
 
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)
+def generatedict(length=-1):
+    try:
+        d=dict()
+        if(length==-1):
+            length=random.randint(1,10)
+        for i in range(length):
+            element_length=random.randint(1,5);
+            k,v=generateStr(length=element_length)
+            d[k]=v;
+        return d
 
-    def add_test(self):
-        e=Pokemon_Entry(id=1,name="test",types="test",abilities="test",height=-1,weight=-1,
-                        gender="test",evolution="test")
-        self.assertEqual(True, add(e,"Pokemon"))
+    except Exception as e:
+        print(CustomError("Test.py generatedict() function, lines 10-19"))
+        print(e);
+        return False;
 
-if __name__ == '__main__':
-    #unittest.main()
-    MyTestCase(unittest).add_test();
+def generateStr(length=-1):
+    try:
+        if(length==-1):
+            length=random.randint(1,5);
+        alpha = "abcdefghijklmnopqrstuvwxyz0123456789"
+        alpha += alpha.upper();
+        return (''.join([alpha[i] for i in range(length)]))
+    except Exception as e:
+        print(CustomError("Test.py generateStr() function, lines 26-30"))
+        print(e);
+        return False;
+
+#function to generate a random nested dictionary
+
+
+

@@ -88,7 +88,13 @@ def write(file, d, keys=None, replace=False):
     #if keys isn't none then call helper function to get the dict you want
 
     #modify the dict
-    d=modify_dict(read(file),keys,content=d,replace=replace)
+    try:
+        modify_dict(read(file),keys,content=d,replace=replace)
+
+    except Exception as e:
+        print(CustomError("JSON.py write() function, line 92"))
+        print(e);
+        return False;
     #then write it into a file as a json string
     f.close()
 
@@ -102,47 +108,79 @@ def printJSON(file):
     return False;
 
 #parsing dictionary functions
-def modify_dict(d,keys,content,replace=False):
-    try:
-        element=get_dict(keys,d)
-    except Exception as e:
-        #print("line 110")
-        print(CustomError("JSON.py, error with get_dict(keys,d) call, line 110"));
-        return False;
-    #so content in this case is either going to be a value or another dict to add to a
-    # list of dictionaries or another dictionary itself.
-    if(type(d)!=dict or replace):
-        #now treat it as a value
-        try:
-            k=get_dict_key(keys,d);
-            element[k]=content
-        except Exception as e:
-            print(CustomError("JSON.py, modify_dict() function, line 118-119"))
-            print(e);
-            return False;
-    else:
-        #this will be the case to append a dictionary
-        try:
-            k=get_dict_key(keys,d)
-            element[k].append(content)
-        except Exception as e:
-            print(CustomError("JSON.py, modify_dict(), lines 127-128"))
-            print(e);
-            return False;
+#In this function, modify_dict() keys isn't None
+def modify_dict(file,d,keys,content,replace=False):
+    #here just parse the inputs and determine which case is needed
 
-    return element;
+    #Case 1: changing a value in a dict
+    try:
+        if(type(d)!=dict or type(d)!=list()):
+            #d is the thing that we will be modifiying
+            entire_dict=read(file);
+            #so call the get_dict() function here which will get you the dictionary
+            #that you'll be modifying, now remember the d input is entire_dict
+            element_dict=get_dict(keys=keys, d=entire_dict);
+            k=list(element_dict.keys())[0]
+            modify_dict_helper(keys,entire_dict,element_dict)
+            return
+
+    except Exception as e:
+        print(CustomError("ERROR: JSON.py, modify_dict() function, lines 126-133"))
+        print(e)
+        return False
+    #Case 2: changing a dictionary (where replace=True)
+    if(replace):
+        try:
+            entire_dict=read(file)
+            element_dict=get_dict(keys,entire_dict)
+            modify_dict_helper(keys,entire_dict,element_dict)
+            return;
+        except Exception as e:
+            print(CustomError("ERROR: JSON.py, modify_dict() function lines 143-145"))
+            print(e);
+            return False
+    #Case 3: appending a dictionary to a list of dictionaries
+    try:
+        entire_dict=read(file)
+        element_dict=get_dict(keys,entire_dict)
+        modify_dict_helper_append(keys,entire_dict,element_dict)
+
+    except Exception as e:
+        print("ERROR JSOn.py modify_dict() function lines 153-155")
+        print(e)
+        return False
+
+
+#modify_dict helper functions here...
 
 #this will take a dictionary and a list of keys that is in d and recursively
 #navigate inside them and get the dict inside them.
 #But this only works if nested...
 def get_dict(keys,d):
     if(len(keys)==1):
-        return d[keys.pop(0)]
+        k=keys.pop(0)
+        return {k:d[k]}
     k=keys.pop(0)
-    return get_dict(keys,d[k]);
+    return get_dict(keys,d[k])
 
 def get_dict_key(keys,d):
     if(len(keys)==1):
         return keys[0]
     k=keys.pop(0)
     return get_dict_key(keys,d[k])
+
+def modify_dict_helper(keys,entire_dict,dict_to_enter):
+    if(len(keys)==1):
+        k=keys.pop(0)
+        entire_dict[k]=dict_to_enter
+        return;
+    k=keys.pop(0)
+    return modify_dict_helper(keys,entire_dict[k],dict_to_enter)
+
+def modify_dict_helper_append(keys,entire_dict,dict_to_enter):
+    if(len(keys)==1):
+        k=keys.pop(0)
+        entire_dict[k].append(dict_to_enter)
+        return;
+    k=keys.pop(0)
+    return modify_dict_helper_append(keys,entire_dict[k],dict_to_enter)

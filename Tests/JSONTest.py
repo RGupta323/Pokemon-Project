@@ -25,6 +25,26 @@ class MyTestCase(unittest.TestCase):
         #self.assertEqual(True, False)
 
         print(r)
+    #add more json tests to test write() function.
+    def test_write(self):
+        baseurl = "C:\\Users\\gupta\\PycharmProjects\\PokemonProject"
+        r=read(baseurl+"\\Files\\test.json")
+        test=(r!=False)
+        self.assertEqual(test,True)
+        self.assertEqual(type(r),dict)
+        file=baseurl+"\\Files\\test-write.json"
+        #so let keys=None in this case, and test that portion of the code.
+        #this is just writing a plain dictionary to an empty file at this point.
+        w=write(file,d=r,keys=None, replace=False)
+        self.assertEqual(w!=False,True)
+
+    def test_write2(self):
+        #generate a random dictionary and replace it
+        baseurl = "C:\\Users\\gupta\\PycharmProjects\\PokemonProject"
+        r = read(baseurl + "\\Files\\test.json")
+        #so another fear that I have is that the write() function isn't going to remember
+        #the rest of the dictionary...
+
 
 
 if __name__ == '__main__':

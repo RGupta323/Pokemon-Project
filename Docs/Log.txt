@@ -44,3 +44,13 @@ I figured out how Pokemon damage is calculated, I figured that'd be a huge roadb
 formula, found here: https://bulbapedia.bulbagarden.net/wiki/Damage
 The other thing is that I'm reformatting functions so it'll return False and raise an error if an exception occurs
 but if not, then it'll return whatever it needs to return. An example of this is the read() function in JSON.py
+
+6/11/2020
+Wrote the code for functions in JSON.py file. Need to write JUnit tests to make sure they
+work, but other than that should be fine.
+Wrote some dict helper functions to navigate the massive dictionary that is the JSON.py files.
+
+6/12/2020
+Reformatted Test.py to be a file to contain helper functions to use for JUnit tests.
+Writing JSON.py JUnit tests. For best case, function works just fine.
+Being able to write to a json file just fine.
