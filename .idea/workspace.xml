@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="69cd0f90-9469-43cd-8d8f-a117ba5391e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JSON.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/JSON.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Docs/Log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/Log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/JSONTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/JSONTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AWSPractice/AWSPractice" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -168,10 +166,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="27" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591546550426" />
-    <state x="285" y="123" key="FileChooserDialogImpl" timestamp="1589901891459">
+    <state x="285" y="123" key="FileChooserDialogImpl" timestamp="1592172561660">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="285" y="123" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589901891459" />
+    <state x="285" y="123" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592172561660" />
     <state width="1068" height="228" key="GridCell.Tab.0.bottom" timestamp="1591974763610">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

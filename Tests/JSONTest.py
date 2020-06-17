@@ -42,8 +42,8 @@ class MyTestCase(unittest.TestCase):
         #generate a random dictionary and replace it
         baseurl = "C:\\Users\\gupta\\PycharmProjects\\PokemonProject"
         r = read(baseurl + "\\Files\\test.json")
-        #so another fear that I have is that the write() function isn't going to remember
-        #the rest of the dictionary...
+
+
 
 
 

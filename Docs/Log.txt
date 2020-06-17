@@ -53,4 +53,13 @@ Wrote some dict helper functions to navigate the massive dictionary that is the 
 6/12/2020
 Reformatted Test.py to be a file to contain helper functions to use for JUnit tests.
 Writing JSON.py JUnit tests. For best case, function works just fine.
-Being able to write to a json file just fine.
+Being able to write to a json file just fine. Worked on the JSON.py functions
+quite a bit, need to write test functions in JSONTest.py.
+
+6/13/2020
+Today I found this API called PokeAPI that actually contains data about Pokemon.
+Found it on Reddit actually (link: https://www.reddit.com/r/webdev/comments/h7rxtp/pokedex_pwa_using_pokeapi_with_beautiful_css/?utm_source=share&utm_medium=ios_app&utm_name=iossmf)
+it links to a project where a guy used the PokeAPI which is on github
+(link: https://github.com/PokeAPI). So, we will be using this API on github,
+to get the Pokemon data, and then make a copy of our own csv files to the API
+remains untouched.
