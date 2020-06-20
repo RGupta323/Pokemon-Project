@@ -1,0 +1,65 @@
+So this is more of a day by day account of what I did, what errors, I encountered
+how I solved them. If I'm changing direction of the project (which I did quite often).
+
+6/6/2020
+So today, I added JSON.py which is a python file to read, write, print, and append
+to a JSON file. I decided to work on this because while using ParseHub there were
+just way too many issues with a CSV file, but with a JSON each entry per say can
+contain multiple values, and can list the data much more effectively.
+
+Although another issue I encountered is that data can be missing for some entries like
+for example, Venasaur is missing some stats information. So I outlined several projects
+that I wanted to do in ParseHub.txt so I'll initiate thouse but most likely they will be
+using JSON files.
+
+Ran into some problems with JUnit, don't think its running my
+test function that I created. It only runs the first one, so
+I called the second test function in the first one, and its not
+doing anything. I don't know if its always returning true
+because my function was called and it returned true.
+
+6/7/2020
+Looked into the JUnit testing issues we encountered them and we
+fixed it. So all functions within the junit class they must have
+test_functionanme(self) this signature, so "test_" must be
+declared. Otherwise this function (located
+ in JSONTest.py) won't run them.
+
+And yes my function works. ISSUE: Weirdly though it doesn't print
+anything even when the print() function is called. Its just
+blank. Now which tells me that the variable r is blank.
+
+I tried to fix it but in vain.
+Might have to script it.
+
+
+6/9/2020
+SOLUTION: So the print statement does work, but I had a function in JSON.py called print() and it was referring
+to that function every time I called print. So the print() function that I had created has been renamed and so the
+print statement now works normally along with the junit tests. Note: print should appear in a blue-purple color when
+written.
+
+6/10/2020
+I figured out how Pokemon damage is calculated, I figured that'd be a huge roadblock down the road but there's a
+formula, found here: https://bulbapedia.bulbagarden.net/wiki/Damage
+The other thing is that I'm reformatting functions so it'll return False and raise an error if an exception occurs
+but if not, then it'll return whatever it needs to return. An example of this is the read() function in JSON.py
+
+6/11/2020
+Wrote the code for functions in JSON.py file. Need to write JUnit tests to make sure they
+work, but other than that should be fine.
+Wrote some dict helper functions to navigate the massive dictionary that is the JSON.py files.
+
+6/12/2020
+Reformatted Test.py to be a file to contain helper functions to use for JUnit tests.
+Writing JSON.py JUnit tests. For best case, function works just fine.
+Being able to write to a json file just fine. Worked on the JSON.py functions
+quite a bit, need to write test functions in JSONTest.py.
+
+6/13/2020
+Today I found this API called PokeAPI that actually contains data about Pokemon.
+Found it on Reddit actually (link: https://www.reddit.com/r/webdev/comments/h7rxtp/pokedex_pwa_using_pokeapi_with_beautiful_css/?utm_source=share&utm_medium=ios_app&utm_name=iossmf)
+it links to a project where a guy used the PokeAPI which is on github
+(link: https://github.com/PokeAPI). So, we will be using this API on github,
+to get the Pokemon data, and then make a copy of our own csv files to the API
+remains untouched.

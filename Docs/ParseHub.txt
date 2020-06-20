@@ -1,0 +1,49 @@
+This is a docs txt file, to inform you how in this Pokemon Project Specifically that ParseHub is going to be used...
+
+So first, we tried to get all the data we want in running one project, but it ended up being a disaster, we had a csv file
+that just had too many spaces filling in one column with so much stuff, which resulted in alot of empty rows.
+
+Also, it took literally 20 minutes to download data of 72 Pokemon and weird symbols get popping up and it was just a disaster.
+
+So there will be multiple projects to get multiple CSV files because for me to do this in one go is going to be too much of a
+headache...
+
+Goals: To get the Pokemon's names that can be found here (https://pokemondb.net/pokedex/national), there are these
+div tags with the class infocards (if you're familiar with bootstrap) and the name of the Pokemon, is an a tag which is
+inside of a span tag which is inside of these div tags with the class infocard.
+
+Now the base URL is https://pokemondb.net/pokedex/pokemonname (ie https://pokemondb.net/pokedex/bulbasaur). My hope is that
+I can search through these URLs (which is why we start with https://pokemondb.net/pokedex/national to get the Pokemon names and
+go to each Pokemon's webpage, and then from there we can scrape the data. But we're going to go nice and slow here.
+
+Project#!: So the first I wanna fill out Pokemon.csv, which is going to contain these tags: id,
+name,types,abilities,height,weight,gender,evolution, hopefully...
+
+Now a complication here is that abilities is that in multiple cases it will have more than one, for example
+Bulbasaur has both abilities: Overgrow and Cholorphyll. Now because it has more than one a separate entry in
+the csv file will be made with all fields blank except for one entry that says Cholorphyll or it'll say id=1, name=Bulbasaur,
+and then the ability cholorphyll. This is the same issue when it comes to Pokemon types, Bulbasaur for example is
+a Grass and Poison type. Again, not ideal.
+
+
+Project#2: Now the second CSV that we wanna fill out is PokemonStats.csv, which essentially details the base, min, max stats
+of each Pokemon. This will be used to calculate attack damage and defense later on... Now each Pokemon has these Stats:
+Hp, Attack, Defense, Sp. Attack, Sp. Defense, and Speed. So the goal is that this csv will simply be formatted like this:
+id, name, BaseHP, Atk, Def, SpAtk, SpDef, Speed.
+
+
+Project#3: Next is going to be filling out PokemonAbilities.csv, this essentially lists out the abilities and what they
+do. In the website (https://pokemondb.net/ability/ability_name) it typically lists the effect right under "Effect" heading.
+Here's the format: ability_name,effect
+
+Project#4: Fill out PokemonMoves.csv, essentially you fill out the moves and what they do. Differnet stats about them.
+Whether a move is physical or special, how much accuracy it has, how much pp it has, what type it is, and
+any additional effects it has. Format: name, type, category (physical,special,status), accuracy, pp, effects_additional
+
+
+
+Now here's the tricky part, you need to figure out which Pokemon can learn certain moves, what types they are and what
+abilities they possess. That's a tricky part. The other thing is items and how they factor in and oh yeah, Mega evolutions.
+There's a lot to unpack here.
+
+Another NOTE: Instead of using CSV files, JSON might be more useful
