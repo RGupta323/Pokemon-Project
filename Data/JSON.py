@@ -97,7 +97,7 @@ def write(file, d, keys=None, replace=False):
         print(e);
         return False;
     #then write it into a file as a json string
-    f.close()
+    #f.close()
 
 '''
 Function to print all data from a given JSON file. 
