@@ -1,8 +1,7 @@
 #Script to create text files and write random strings on a text file
 #then to give write that into a bucket
-import boto3
-from AWS.S3.createbucket import *
-import os
+from AWS.S3.src.createbucket import *
+
 '''
 This is a script that has functions to upload files to a bucket (write_bucket()) and download files from a given bucket 
 (read_bucket()). 
