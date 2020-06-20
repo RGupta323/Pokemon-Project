@@ -40,8 +40,12 @@ class MyTestCase(unittest.TestCase):
 
     def test_write2(self):
         #generate a random dictionary and replace it
-        baseurl = "C:\\Users\\gupta\\PycharmProjects\\PokemonProject"
-        r = read(baseurl + "\\Files\\test.json")
+        file = "C:\\Users\\gupta\\PycharmProjects\\PokemonProject\\Files\\test-write.json"
+        r = read(file)
+        self.assertFalse(r=="")
+        print("test_write2() function, JSONTest.py, r: "+str(r))
+        keys=["menu","popup","menuitem","value"]
+        self.assertEqual(write(file=file,d=r,keys=keys,replace=False),True)
 
 
 

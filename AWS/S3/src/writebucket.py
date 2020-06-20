@@ -103,7 +103,7 @@ Output:
 '''
 def read_bucket(bucket_name,file, file_name):
     try:
-        s3=boto3.client('s3',aws_access_key_id = "AKIA3NCGCBMDCRU2ZI75",aws_secret_access_key = "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")
+        s3=boto3.client('s3')
         print("Downloading file")
         s3.download_file(bucket_name,file, file_name);
     except TypeError as t:

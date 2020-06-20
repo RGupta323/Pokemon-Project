@@ -74,9 +74,10 @@ Outputs:
 '''
 def write(file, d, keys=None, replace=False):
     #open the file
-    f=open(file,'w');
+    #f=open(file,'w');
     if(keys==None):
         try:
+            f=open(file,'w')
             y=json.dumps(d);
             f.write(y);
             f.close();
