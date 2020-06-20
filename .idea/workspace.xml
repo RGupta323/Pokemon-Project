@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69cd0f90-9469-43cd-8d8f-a117ba5391e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JSON.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/JSON.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/test-write.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/test-write.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/JSONTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/JSONTest.py" afterDir="false" />
-    </list>
+    <list default="true" id="69cd0f90-9469-43cd-8d8f-a117ba5391e4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
