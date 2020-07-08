@@ -34,12 +34,8 @@ def get_pokemon(i):
         #assuming the type of response is now json, write that into a file and store it
         #get the name of the json file
         response_dict=response.json()
-        #print(type(response_dict))
-        #print(response.json())
-        #print(type(response.json()))
-        #print(response_dict['name'])
         file_name=response_dict['name']
-        #print(type(json.loads(response_dict)))
+
         #using the write() function in JSON.py to convert response to a dictionary then to a json string
         #and writing that as a json file and storing it in ...\\Files\\Pokemon\\file_name.json
         JSON.write(file="C:\\Users\\gupta\\PycharmProjects\\PokemonProject\\Files\\Pokemon\\"+file_name+".json",
@@ -47,6 +43,10 @@ def get_pokemon(i):
 
         return response_dict
     except Exception as e:
-        print("PokeAPI.py, get_pokemon() function, lines 26-30")
+        print("PokeAPI.py, get_pokemon() function, lines 30-42")
         print(e)
         return False
+
+#other functions...
+
+#function to get the ith ability info

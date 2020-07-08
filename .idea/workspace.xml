@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="69cd0f90-9469-43cd-8d8f-a117ba5391e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JSON.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/JSON.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/Log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/PokeAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/PokeAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Pokemon/blastoise.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Pokemon/blastoise.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -34,20 +35,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AWS/S3/tests" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AWSPractice/AWSPractice" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\AWS\S3\tests" />
-      <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\AWS\S3" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\AWS\S3\src" />
       <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\Files" />
       <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\Errors" />
       <recent name="C:\Users\gupta\PycharmProjects\PokemonProject" />
       <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\Data\Objects" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\AWS\S3\tests" />
+      <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\AWS\S3" />
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Unittests for PokeAPITest.MyTestCase.test_getmultiplepokemon">
@@ -170,9 +171,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="27" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591546550426" />
-    <state x="285" y="123" key="FileChooserDialogImpl" timestamp="1592172561660">
+    <state x="285" y="123" key="FileChooserDialogImpl" timestamp="1592872734060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="285" y="123" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592872734060" />
     <state x="285" y="123" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592172561660" />
     <state width="1224" height="225" key="GridCell.Tab.0.bottom" timestamp="1592696473664">
       <screen x="0" y="0" width="1536" height="824" />
