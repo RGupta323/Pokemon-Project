@@ -185,3 +185,11 @@ def modify_dict_helper_append(keys,entire_dict,dict_to_enter):
         return;
     k=keys.pop(0)
     return modify_dict_helper_append(keys,entire_dict[k],dict_to_enter)
+
+#functions to parse a json fully for specific key k.
+'''
+Function to search for a parse a json and looking for the values of a specific key k. 
+Use a tree to do that. 
+'''
+def parse_json(k):
+    pass
