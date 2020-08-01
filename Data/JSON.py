@@ -20,7 +20,7 @@ Output:
 def read(file):
     try:
         f=open(file,'r');
-        r=f.read()
+        r=json.loads(f.read())
         if(r==""):
             raise CustomError("Line 13, r is empty")
             return False;
