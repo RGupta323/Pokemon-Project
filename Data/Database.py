@@ -29,7 +29,7 @@ def add(data:dict, table_name:str):
         add_pokemon(data)
 
     elif(table_name=="Ability"):
-        pass
+        add_abillity(data)
 
     elif(table_name == "Move"):
         pass
@@ -63,6 +63,47 @@ def add_pokemon(data:dict):
     print("Pokemon {} was successfully added to the {} table in the {} database".format(data['name'], "Pokemon", db))
     return data
 
+def add_ability(data:dict):
+    #check data to see if it matches this format:
+    #name(text), effect(text), pokemon(list - of effected pokemon)
+    keys = {"name":str, 'effect':str, "pokemon":list}
+    check = lambda keys, d: all([k in keys.keys() and type(d[k]) == keys[k] for k in d.keys()])
+    if False == check(keys, data):
+        raise Exception(
+            "Dictionary data not formatted probably. Should be formated like this: {}. Data: {}".format(keys, data))
+
+    #define cursor and connection objects
+    conn = sqlite3.connect(db)
+    cur = conn.cursor()
+    print(data)
+    try:
+        cur.execute("""INSERT INTO ability VALUES ('{}',"{}");""".format(
+        data['name'], data['effect']
+        ))
+
+    # allowing user input for exception handling, in the ability case there are some cases where "" are used for the descriptions.
+    except Exception as e:
+        userInput = input("An exception occured! Here's the data generated: {}. Would you like to modify it: ".format(data))
+        if(userInput=="y"):
+            new_effect = input("Please enter the new effect you would like for this entry: ")
+            cur.execute("""INSERT INTO ability VALUES ('{}', "{}");""".format(
+                data['name'], new_effect
+            ))
+        else:
+            return False
+
+
+    conn.commit()
+
+    conn.close()
+    print("Ability {} was successfully added to the {} table in the {} database".format(data['name'], "Ability", db))
+    return data
+
+def add_move(data:dict):
+    pass
+
+def add_item(data:dict):
+    pass
 
 def search():
     pass

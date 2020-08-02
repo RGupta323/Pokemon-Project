@@ -42,6 +42,24 @@ class MyTestCase(unittest.TestCase):
             add(d, "Pokemon")
         self.assertEqual(True, True)
 
+    def test_addability(self):
+        abilities = os.listdir("C:\\Users\\gupta\\PycharmProjects\\PokemonProject\\Files\\ability\\")
+        for ability in abilities:
+            ability_dict = JSON.read("C:\\Users\\gupta\\PycharmProjects\\PokemonProject\\Files\\ability\\"+ability)
+            #format data dictionary as input to add_ability() 
+            d = dict() 
+            
+            #name 
+            d['name'] = ability_dict['name']
+            
+            #effect 
+            d['effect'] = [effect['effect'] for effect in ability_dict['effect_entries'] if(effect['language']['name'] == 'en')][0]
+            #execute add_ability() function in Database.py
+            add_ability(d)
+        
+            
+        self.assertEqual(True, True)
+
 
 if __name__ == '__main__':
     unittest.main()

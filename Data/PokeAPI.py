@@ -78,7 +78,8 @@ def get_json(type, i):
 
         #using the write() function in JSON.py to convert response to a dictionary then to a json string
         #and writing that as a json file and storing it in ...\\Files\\Pokemon\\file_name.json
-        JSON.write(file="C:\\Users\\gupta\\PycharmProjects\\PokemonProject\\Files\\Pokemon\\"+file_name+".json",
+        JSON.write(file="C:\\Users\\gupta\\PycharmProjects\\PokemonProject\\Files\\{}\\{}.json".format(
+            type, file_name),
                    d=json.dumps(response_dict))
 
         return response_dict
