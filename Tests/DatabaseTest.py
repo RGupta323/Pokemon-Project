@@ -1,19 +1,46 @@
 import unittest
 
 from Data.Database import *
+import os
+from Data import JSON
+from Data.PokeAPI import get_json
 class MyTestCase(unittest.TestCase):
     def test_tableexists(self):
         self.assertEqual(check_table(), True)
 
     def test_addpokemon(self):
-        # Load up all the json of all the pokemon id's 01 - 721 (inclusive)
-        pokemon_ids = range(1, 722)
-        # Pick a pokemon by the json
 
-        # Assemble data dictionary
+        data = {"id": int, "name": str, "types": str, 'weight': int, 'height': int, 'hp': int, 'attack': int,
+                    'speical-attack': int, 'defense': int,
+                    'special-defense': int, 'speed': int, 'abilities': str
+                    }
 
         # execute add_pokemon() function in Database.py
-        pass
+        pokemon = os.listdir("C:\\Users\\gupta\\PycharmProjects\\PokemonProject\\Files\\Pokemon\\")
+        for p in pokemon:
+            #open the json folder up, and load it into a dictionary
+            poke_dict = JSON.read("C:\\Users\\gupta\\PycharmProjects\\PokemonProject\\Files\\Pokemon\\"+p)
+
+            #assemble data dictionary for each pokemon
+            d = dict()
+            #id, name
+            d['id'], d['name'] = int(poke_dict['id']), p.split(".")[0]
+
+            #types
+            d['types'] = " ".join([type['type']['name'] for type in poke_dict['types']])
+            #weight, height
+            d['weight'], d['height'] = int(poke_dict['weight']), int(poke_dict['height'])
+
+            #stats: hp, attack, sp_atk, defense, sp_def, speed
+            for stat in poke_dict['stats']:
+                d[stat['stat']['name']] = int(stat['base_stat'])
+
+            #abilities -> form a string (separated by spaces) with the abilities names
+            d['abilities'] = " ".join([ability['ability']['name'] for ability in poke_dict['abilities']])
+
+            #use database add function()
+            add(d, "Pokemon")
+        self.assertEqual(True, True)
 
 
 if __name__ == '__main__':

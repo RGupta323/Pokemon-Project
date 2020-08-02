@@ -15,11 +15,14 @@ def check_table(db="Pokemon.db", table_name="Pokemon"):
         return "no such table" in e.args[0]
     cur.close()
     conn.close()
+    return True
 
-def add(data:list, table_name:str):
+def add(data:dict, table_name:str):
     # Create a connection and cursor object
 
     table_exists = check_table(table_name=table_name)
+    if(table_exists != True):
+        raise Exception(table_exists)
     print(table_exists)
 
     if(table_name=="Pokemon"):
@@ -38,10 +41,10 @@ def add(data:list, table_name:str):
 def add_pokemon(data:dict):
     # check data to see if it matters that the keys matter this format: id (real), name (text), types (text),
     # weight (real), height (real), hp (real), attack (real), sp_atk (real), defense (real), sp_def (real), speed (real), abilities (text).
-    keys = {"id":int, "name":str, "types":str, 'weight':int, 'height':int, 'hp':int, 'attack':int, 'sp_atk':int, 'defense':int,
-            'sp_def': int, 'speed': int, 'abilities':str
+    keys = {"id":int, "name":str, "types":str, 'weight':int, 'height':int, 'hp':int, 'attack':int, 'special-attack':int, 'defense':int,
+            'special-defense': int, 'speed': int, 'abilities':str
             }
-    check = lambda keys, d: all([k in keys.keys() and type(d[k])!=keys[k] for k in d.keys()])
+    check = lambda keys, d: all([k in keys.keys() and type(d[k])==keys[k] for k in d.keys()])
     if False == check(keys, data):
         raise Exception("Dictionary data not formatted probably. Should be formated like this: {}. Data: {}".format(keys,data))
 
@@ -51,7 +54,7 @@ def add_pokemon(data:dict):
 
     cur.execute("""INSERT INTO Pokemon VALUES ({},'{}','{}',{},{},{},{},{},{},{},{},'{}')""".format(
         data['id'], data['name'], data['types'], data['weight'], data['height'], data['hp'], data['attack'],
-        data['sp_atk'], data['defense'], data['sp_def'], data['speed'], data['abilities']
+        data['special-attack'], data['defense'], data['special-defense'], data['speed'], data['abilities']
     ))
 
     conn.commit()

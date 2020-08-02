@@ -4,11 +4,21 @@
     <list default="true" id="69cd0f90-9469-43cd-8d8f-a117ba5391e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JSON.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/JSON.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/PokeAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/PokeAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Objects/Pokemon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/Pokemon.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Objects/Tree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/PokeAPITest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/PokeAPITest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Pokemon/blastoise.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Pokemon/blastoise.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Pokemon/bulbasaur.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Pokemon/bulbasaur.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Pokemon/caterpie.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Pokemon/caterpie.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Pokemon/charizard.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Pokemon/charizard.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Pokemon/charmander.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Pokemon/charmander.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Pokemon/charmeleon.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Pokemon/charmeleon.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Pokemon/ivysaur.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Pokemon/ivysaur.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Pokemon/squirtle.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Pokemon/squirtle.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Pokemon/venusaur.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Pokemon/venusaur.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Pokemon/wartortle.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Pokemon/wartortle.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/Ability.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/Ability.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/Move.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/Move.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon.db" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon.db-journal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/DatabaseTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/DatabaseTest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +64,7 @@
       <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\AWS\S3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for DatabaseTest.MyTestCase.test_tableexists">
+  <component name="RunManager" selected="Python tests.Unittests for DatabaseTest.MyTestCase.test_addpokemon">
     <configuration name="PokemonProject" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PokemonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,6 +84,20 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for DatabaseTest.MyTestCase.test_addpokemon" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="PokemonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;DatabaseTest.MyTestCase.test_addpokemon&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for DatabaseTest.MyTestCase.test_tableexists" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -132,27 +156,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for PokeAPITest.MyTestCase.test_getmultiplepokemon" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="PokemonProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;PokeAPITest.MyTestCase.test_getmultiplepokemon&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_addpokemon" />
         <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_tableexists" />
         <item itemvalue="Python tests.Unittests for NodeTest.MyTestCase.test_equalsTest" />
         <item itemvalue="Python tests.Unittests for NodeTest.MyTestCase.test_addChild" />
         <item itemvalue="Python tests.Unittests for NodeTest.MyTestCase" />
-        <item itemvalue="Python tests.Unittests for PokeAPITest.MyTestCase.test_getmultiplepokemon" />
       </list>
     </recent_temporary>
   </component>
@@ -187,28 +197,28 @@
     </state>
     <state x="285" y="123" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592872734060" />
     <state x="285" y="123" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592172561660" />
-    <state width="1515" height="227" key="GridCell.Tab.0.bottom" timestamp="1596029410643">
+    <state width="1515" height="312" key="GridCell.Tab.0.bottom" timestamp="1596327352834">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="1515" height="227" key="GridCell.Tab.0.bottom/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596029410643" />
+    <state width="1515" height="312" key="GridCell.Tab.0.bottom/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596327352834" />
     <state width="1224" height="225" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592696473664" />
     <state width="1515" height="227" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595128905613" />
-    <state width="1515" height="227" key="GridCell.Tab.0.center" timestamp="1596029410643">
+    <state width="1515" height="312" key="GridCell.Tab.0.center" timestamp="1596327352834">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="1515" height="227" key="GridCell.Tab.0.center/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596029410643" />
+    <state width="1515" height="312" key="GridCell.Tab.0.center/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596327352834" />
     <state width="1224" height="225" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592696473664" />
     <state width="1515" height="227" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595128905613" />
-    <state width="1515" height="227" key="GridCell.Tab.0.left" timestamp="1596029410643">
+    <state width="1515" height="312" key="GridCell.Tab.0.left" timestamp="1596327352834">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="1515" height="227" key="GridCell.Tab.0.left/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596029410643" />
+    <state width="1515" height="312" key="GridCell.Tab.0.left/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596327352834" />
     <state width="1224" height="225" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592696473664" />
     <state width="1515" height="227" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595128905613" />
-    <state width="1515" height="227" key="GridCell.Tab.0.right" timestamp="1596029410643">
+    <state width="1515" height="312" key="GridCell.Tab.0.right" timestamp="1596327352834">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="1515" height="227" key="GridCell.Tab.0.right/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596029410643" />
+    <state width="1515" height="312" key="GridCell.Tab.0.right/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596327352834" />
     <state width="1224" height="225" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592696473664" />
     <state width="1515" height="227" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595128905613" />
     <state width="1515" height="207" key="GridCell.Tab.1.bottom" timestamp="1595200660544">
