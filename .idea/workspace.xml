@@ -4,8 +4,6 @@
     <list default="true" id="69cd0f90-9469-43cd-8d8f-a117ba5391e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/PokeAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/PokeAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/Pokemon/spewpa.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/DatabaseTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/DatabaseTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/Pokemon.db" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Pokemon.db" afterDir="false" />
     </list>
@@ -53,7 +51,7 @@
       <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\Data\Objects" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for DatabaseTest.MyTestCase.test_addability">
+  <component name="RunManager" selected="Python tests.Unittests for DatabaseTest.MyTestCase.test_edittest">
     <configuration name="PokemonProject" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PokemonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,7 +73,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for DatabaseTest.MyTestCase.test_addability" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for DatabaseTest.MyTestCase.test_additem" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PokemonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -85,11 +83,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;DatabaseTest.MyTestCase.test_addability&quot;" />
+      <option name="_new_target" value="&quot;DatabaseTest.MyTestCase.test_additem&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for DatabaseTest.MyTestCase.test_addpokemon" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for DatabaseTest.MyTestCase.test_addmove" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PokemonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -99,11 +97,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;DatabaseTest.MyTestCase.test_addpokemon&quot;" />
+      <option name="_new_target" value="&quot;DatabaseTest.MyTestCase.test_addmove&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for DatabaseTest.MyTestCase.test_tableexists" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for DatabaseTest.MyTestCase.test_edittest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PokemonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -113,11 +111,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;DatabaseTest.MyTestCase.test_tableexists&quot;" />
+      <option name="_new_target" value="&quot;DatabaseTest.MyTestCase.test_edittest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for NodeTest.MyTestCase.test_addChild" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for DatabaseTest.MyTestCase.test_gettest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PokemonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,11 +125,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;NodeTest.MyTestCase.test_addChild&quot;" />
+      <option name="_new_target" value="&quot;DatabaseTest.MyTestCase.test_gettest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for NodeTest.MyTestCase.test_equalsTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for DatabaseTest.MyTestCase.test_loaditemjson" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PokemonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -141,17 +139,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;NodeTest.MyTestCase.test_equalsTest&quot;" />
+      <option name="_new_target" value="&quot;DatabaseTest.MyTestCase.test_loaditemjson&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_addability" />
-        <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_addpokemon" />
-        <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_tableexists" />
-        <item itemvalue="Python tests.Unittests for NodeTest.MyTestCase.test_equalsTest" />
-        <item itemvalue="Python tests.Unittests for NodeTest.MyTestCase.test_addChild" />
+        <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_edittest" />
+        <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_gettest" />
+        <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_additem" />
+        <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_loaditemjson" />
+        <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_addmove" />
       </list>
     </recent_temporary>
   </component>
@@ -186,28 +184,32 @@
     </state>
     <state x="285" y="123" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592872734060" />
     <state x="285" y="123" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592172561660" />
-    <state width="1515" height="312" key="GridCell.Tab.0.bottom" timestamp="1596332320719">
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom" timestamp="1597865049381">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state width="1515" height="312" key="GridCell.Tab.0.bottom/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596332320719" />
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.0.1536.783@0.0.1536.783" timestamp="1597865049381" />
     <state width="1224" height="225" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592696473664" />
     <state width="1515" height="227" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595128905613" />
-    <state width="1515" height="312" key="GridCell.Tab.0.center" timestamp="1596332320719">
+    <state width="1515" height="228" key="GridCell.Tab.0.center" timestamp="1597865049381">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state width="1515" height="312" key="GridCell.Tab.0.center/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596332320719" />
+    <state width="1515" height="228" key="GridCell.Tab.0.center/0.0.1536.783@0.0.1536.783" timestamp="1597865049381" />
     <state width="1224" height="225" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592696473664" />
     <state width="1515" height="227" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595128905613" />
-    <state width="1515" height="312" key="GridCell.Tab.0.left" timestamp="1596332320719">
+    <state width="1515" height="228" key="GridCell.Tab.0.left" timestamp="1597865049381">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state width="1515" height="312" key="GridCell.Tab.0.left/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596332320719" />
+    <state width="1515" height="228" key="GridCell.Tab.0.left/0.0.1536.783@0.0.1536.783" timestamp="1597865049381" />
     <state width="1224" height="225" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592696473664" />
     <state width="1515" height="227" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595128905613" />
-    <state width="1515" height="312" key="GridCell.Tab.0.right" timestamp="1596332320719">
+    <state width="1515" height="228" key="GridCell.Tab.0.right" timestamp="1597865049381">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state width="1515" height="312" key="GridCell.Tab.0.right/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596332320719" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right/0.0.1536.783@0.0.1536.783" timestamp="1597865049381" />
     <state width="1224" height="225" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592696473664" />
     <state width="1515" height="227" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595128905613" />
     <state width="1515" height="207" key="GridCell.Tab.1.bottom" timestamp="1595200660544">
