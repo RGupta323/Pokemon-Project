@@ -1,6 +1,6 @@
 import sys;
 
-from Data.Database import *
+from Data.Database import get
 from Data.CSV import *;
 from Data.WebScrape import *;
 
@@ -17,10 +17,11 @@ Please enter your choice: '''))
 #multiple simulations do some ML stuff (which at this point is I'm not sure how to do). Either with a fixed moveset or
 # a variable moveset (the machine chooses the moves)
 if(userInput==1):
-    #ask the user to select two pokemon
-    p1,p2 = None
-    #Ask user for the moveset
+    # ask the user to select two pokemon
+    p1,p2 = "Lucario", "Blaziken"
 
+    # Ask user for the moveset
+    moveset = input("Enter 4")
     #validate moveset - make sure the pokemon can learn the moves. For example bulbasaur can't learn flamethrower.
 
     #Use PokemonAPI.py functions to search for the pokemon on name and generate an object (defined in \Objects not the jsonfiles)
