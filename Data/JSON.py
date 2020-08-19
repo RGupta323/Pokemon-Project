@@ -20,7 +20,7 @@ Output:
 def read(file):
     try:
         f=open(file,'r');
-        r=f.read()
+        r=json.loads(f.read())
         if(r==""):
             raise CustomError("Line 13, r is empty")
             return False;
@@ -97,7 +97,7 @@ def write(file, d, keys=None, replace=False):
         print(e);
         return False;
     #then write it into a file as a json string
-    f.close()
+    #f.close()
 
 '''
 Function to print all data from a given JSON file. 
@@ -185,3 +185,11 @@ def modify_dict_helper_append(keys,entire_dict,dict_to_enter):
         return;
     k=keys.pop(0)
     return modify_dict_helper_append(keys,entire_dict[k],dict_to_enter)
+
+#functions to parse a json fully for specific key k.
+'''
+Function to search for a parse a json and looking for the values of a specific key k. 
+Use a tree to do that. 
+'''
+def parse_json(k):
+    pass

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69cd0f90-9469-43cd-8d8f-a117ba5391e4" name="Default Changelist" comment="" />
+    <list default="true" id="69cd0f90-9469-43cd-8d8f-a117ba5391e4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/DatabaseTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/DatabaseTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Pokemon.db" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Pokemon.db" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Unit Test" />
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -30,8 +35,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AWS/S3/tests" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AWSPractice/AWSPractice" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -46,7 +51,7 @@
       <recent name="C:\Users\gupta\PycharmProjects\PokemonProject\Data\Objects" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for JSONTest.MyTestCase.test_write2">
+  <component name="RunManager" selected="Python tests.Unittests for DatabaseTest.MyTestCase.test_edittest">
     <configuration name="PokemonProject" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PokemonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -68,7 +73,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for JSONTest.MyTestCase.test_readTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for DatabaseTest.MyTestCase.test_additem" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PokemonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -78,11 +83,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;JSONTest.MyTestCase.test_readTest&quot;" />
+      <option name="_new_target" value="&quot;DatabaseTest.MyTestCase.test_additem&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for JSONTest.MyTestCase.test_something" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for DatabaseTest.MyTestCase.test_addmove" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PokemonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,11 +97,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;JSONTest.MyTestCase.test_something&quot;" />
+      <option name="_new_target" value="&quot;DatabaseTest.MyTestCase.test_addmove&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for JSONTest.MyTestCase.test_write" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for DatabaseTest.MyTestCase.test_edittest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PokemonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,11 +111,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;JSONTest.MyTestCase.test_write&quot;" />
+      <option name="_new_target" value="&quot;DatabaseTest.MyTestCase.test_edittest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for JSONTest.MyTestCase.test_write2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for DatabaseTest.MyTestCase.test_gettest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PokemonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,11 +125,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;JSONTest.MyTestCase.test_write2&quot;" />
+      <option name="_new_target" value="&quot;DatabaseTest.MyTestCase.test_gettest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in JSONTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for DatabaseTest.MyTestCase.test_loaditemjson" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PokemonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,17 +139,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/JSONTest.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;DatabaseTest.MyTestCase.test_loaditemjson&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for JSONTest.MyTestCase.test_write2" />
-        <item itemvalue="Python tests.Unittests for JSONTest.MyTestCase.test_write" />
-        <item itemvalue="Python tests.Unittests for JSONTest.MyTestCase.test_readTest" />
-        <item itemvalue="Python tests.Unittests in JSONTest.py" />
-        <item itemvalue="Python tests.Unittests for JSONTest.MyTestCase.test_something" />
+        <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_edittest" />
+        <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_gettest" />
+        <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_additem" />
+        <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_loaditemjson" />
+        <item itemvalue="Python tests.Unittests for DatabaseTest.MyTestCase.test_addmove" />
       </list>
     </recent_temporary>
   </component>
@@ -166,49 +171,76 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="27" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591546550426" />
-    <state x="285" y="123" key="FileChooserDialogImpl" timestamp="1592172561660">
+    <state x="519" y="195" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596029303283">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="519" y="195" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596029303283" />
+    <state x="499" y="139" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595870167642">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="499" y="139" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1595870167642" />
+    <state x="285" y="123" key="FileChooserDialogImpl" timestamp="1592872734060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="285" y="123" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592872734060" />
     <state x="285" y="123" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592172561660" />
-    <state width="1224" height="225" key="GridCell.Tab.0.bottom" timestamp="1592671734125">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom" timestamp="1597865049381">
+      <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="1224" height="225" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592671734125" />
-    <state width="1224" height="225" key="GridCell.Tab.0.center" timestamp="1592671734125">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1515" height="312" key="GridCell.Tab.0.bottom/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596332320719" />
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.0.1536.783@0.0.1536.783" timestamp="1597865049381" />
+    <state width="1224" height="225" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592696473664" />
+    <state width="1515" height="227" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595128905613" />
+    <state width="1515" height="228" key="GridCell.Tab.0.center" timestamp="1597865049381">
+      <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="1224" height="225" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592671734125" />
-    <state width="1224" height="225" key="GridCell.Tab.0.left" timestamp="1592671734125">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1515" height="312" key="GridCell.Tab.0.center/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596332320719" />
+    <state width="1515" height="228" key="GridCell.Tab.0.center/0.0.1536.783@0.0.1536.783" timestamp="1597865049381" />
+    <state width="1224" height="225" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592696473664" />
+    <state width="1515" height="227" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595128905613" />
+    <state width="1515" height="228" key="GridCell.Tab.0.left" timestamp="1597865049381">
+      <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="1224" height="225" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592671734125" />
-    <state width="1224" height="225" key="GridCell.Tab.0.right" timestamp="1592671734125">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1515" height="312" key="GridCell.Tab.0.left/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596332320719" />
+    <state width="1515" height="228" key="GridCell.Tab.0.left/0.0.1536.783@0.0.1536.783" timestamp="1597865049381" />
+    <state width="1224" height="225" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592696473664" />
+    <state width="1515" height="227" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595128905613" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right" timestamp="1597865049381">
+      <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="1224" height="225" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592671734125" />
-    <state width="886" height="382" key="GridCell.Tab.1.bottom" timestamp="1591465862878">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1515" height="312" key="GridCell.Tab.0.right/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1596332320719" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right/0.0.1536.783@0.0.1536.783" timestamp="1597865049381" />
+    <state width="1224" height="225" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592696473664" />
+    <state width="1515" height="227" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595128905613" />
+    <state width="1515" height="207" key="GridCell.Tab.1.bottom" timestamp="1595200660544">
+      <screen x="0" y="0" width="1536" height="783" />
     </state>
+    <state width="1515" height="207" key="GridCell.Tab.1.bottom/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1595200660544" />
     <state width="886" height="382" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591465862878" />
-    <state width="886" height="382" key="GridCell.Tab.1.center" timestamp="1591465862878">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1515" height="207" key="GridCell.Tab.1.center" timestamp="1595200660534">
+      <screen x="0" y="0" width="1536" height="783" />
     </state>
+    <state width="1515" height="207" key="GridCell.Tab.1.center/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1595200660534" />
     <state width="886" height="382" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591465862878" />
-    <state width="886" height="382" key="GridCell.Tab.1.left" timestamp="1591465862878">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1515" height="207" key="GridCell.Tab.1.left" timestamp="1595200660534">
+      <screen x="0" y="0" width="1536" height="783" />
     </state>
+    <state width="1515" height="207" key="GridCell.Tab.1.left/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1595200660534" />
     <state width="886" height="382" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591465862878" />
-    <state width="886" height="382" key="GridCell.Tab.1.right" timestamp="1591465862878">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1515" height="207" key="GridCell.Tab.1.right" timestamp="1595200660544">
+      <screen x="0" y="0" width="1536" height="783" />
     </state>
+    <state width="1515" height="207" key="GridCell.Tab.1.right/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1595200660544" />
     <state width="886" height="382" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591465862878" />
-    <state x="277" y="55" key="SettingsEditor" timestamp="1591122968030">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="277" y="52" key="SettingsEditor" timestamp="1595337641030">
+      <screen x="0" y="0" width="1536" height="783" />
     </state>
+    <state x="277" y="52" key="SettingsEditor/0.0.1536.783/1920.0.1920.1040@0.0.1536.783" timestamp="1595337641030" />
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591122968030" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591900043683">
+    <state x="431" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1592693391235">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="431" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1592693391235" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591900043683" />
     <state x="491" y="324" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1591453957617">
       <screen x="0" y="0" width="1536" height="824" />

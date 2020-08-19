@@ -63,3 +63,14 @@ it links to a project where a guy used the PokeAPI which is on github
 (link: https://github.com/PokeAPI). So, we will be using this API on github,
 to get the Pokemon data, and then make a copy of our own csv files to the API
 remains untouched.
+
+6/20/2020
+Decided to ditch the JSON stuff, the last 7 days I've been preocupied writing python scripts for
+S3 buckets using AWS (those scripts have been added in the python folder AWS/S3/src and AWS/S3/tests.
+Wrote junit tests for those functions. Today I've created a file called PokeAPI.py which is going to be using
+(https://pokeapi.co/) this API as well as the interface pokebase (https://github.com/PokeAPI/pokebase)
+which is meant to be a interface to pokeapi. That will be using both to convert information about the
+pokemon to files for the main crux of the project which will be the ML stuff.
+
+Also side note, I may start using flask which can be used to render web pages as a backend to function
+as a gui for the project but thats more of an afterthought.
